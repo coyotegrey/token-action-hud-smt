@@ -1,0 +1,71 @@
+{
+  "id": "token-action-hud-smt",
+  "title": "Token Action HUD Shin Megami Tensei",
+  "description": "Token Action HUD is a repositionable HUD of actions for a selected token",
+  "authors": [
+    {
+      "name": "coyotegrey",
+      "url": "https://github.com/coyotegrey"
+    }
+  ],
+  "url": "#{URL}#",
+  "flags": {},
+  "version": "#{VERSION}#",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12.331"
+  },
+  "esmodules": [
+    "./scripts/init.js"
+  ],
+  "scripts": [
+  ],
+  "styles": [
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
+  "packs": [],
+  "relationships": {
+    "systems": [
+      {
+        "id": "smt-200x",
+        "type": "system",
+        "compatibility": [
+          {
+            "minimum": "0.878",
+            "verified": "0.878"
+          }
+        ]
+      }
+    ],
+    "requires": [
+      {
+        "id": "token-action-hud-core",
+        "type": "module",
+        "compatibility": [
+          {
+            "minimum": "2.0.0",
+            "verified": "2.0.11"
+          }
+        ]
+      }
+    ],
+    "optional": [],
+    "flags": {
+      "optional": []
+    }
+  },
+  "socket": false,
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
+  "license": "LICENSE",
+  "readme": "README.md",
+  "protected": false,
+  "coreTranslation": false,
+  "library": false
+}
