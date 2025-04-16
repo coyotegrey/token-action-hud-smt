@@ -1,7 +1,26 @@
 {
   "tokenActionHud": {
     "smt": {
-      "placeholder": "Placeholder"
+      "stat": "Stat",
+      "stats": "Stats",
+      "derived": "Derived Stats",
+      "dodge": "Dodge",
+      "talk": "Talk",
+      "physical": "Physical",
+      "ranged": "Ranged",
+      "spell": "Spell",
+      "init": "Initiative",
+      "action": "Action",
+      "actions": "Actions",
+      "passives": "Passives",
+      "item": "Item",
+      "items": "Items",
+      "consumables": "Consumables",
+      "armor": "Armor",
+      "ailment": "Ailment",
+      "bs": "Bad Status",
+      "weapons": "Weapons",
+      "rest": "Rest"
     }
   }
 }

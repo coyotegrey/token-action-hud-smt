@@ -11,8 +11,8 @@ A module for using Token Action HUD with the Shin Megami Tensei TRPG Devil City 
 ## Features
 
 - Make rolls directly from the HUD instead of opening your character sheet.
-- Display the details for abilities, talents, powers, and gear in chat.
-- Toggle conditions on and off.
+- Display the details for stats, features, and gear in chat.
+- Toggle statuses on and off.
 - Equip or unequip gear.
 - Move the HUD and choose to expand the menus up or down.
 - Unlock the HUD to customize layout and groups per user, and actions per actor.
@@ -20,10 +20,10 @@ A module for using Token Action HUD with the Shin Megami Tensei TRPG Devil City 
 
 ## Required Modules
 
-**IMPORTANT** — Token Action HUD Wrath & Glory requires the [Token Action HUD Core](https://foundryvtt.com/packages/token-action-hud-core) and [Shin Megami Tensei](https://github.com/Alondaar/smt-200x) modules to be installed.
+**IMPORTANT** — Token Action HUD Shin Megami Tensei requires the [Token Action HUD Core](https://foundryvtt.com/packages/token-action-hud-core) and [Shin Megami Tensei](https://github.com/Alondaar/smt-200x) modules to be installed.
 
 **Required versions:**
-- TAH SMT v0.0.1 and newer: Core v2.0, W&G v0.0
+- TAH SMT v0.0.1 and newer: Core v2.0, SMT-200X v0.884
 
 ## Recommended Modules
 
@@ -35,7 +35,9 @@ For a guide on using Token Action HUD, go to: [How to Use Token Action HUD](http
 ---
 #### Does Right Click do anything?
 Yes, Right Click does one thing currently, depending on what you are clicking:
-* Gear — equips or unequips the gear (if appropriate).
+* Stats - launches full dialog when rolling.
+* Features - target numbers and power rolls launch full dialog when rolling. Uses decrement on right click.
+* Consumables - decrement uses on right click.
 
 Otherwise, Right Click behaves just like Left Click.
 
@@ -54,9 +56,10 @@ If you wish to contact me for any reason, reach me out on Discord using my tag: 
 ## Acknowledgments
 
 * Thanks to Russell (@Larkinabout) for creating the [Token Action HUD Core](https://foundryvtt.com/packages/token-action-hud-core)!
+* Thanks to Alondaar (@alondaar) for creating the [Shin Megami Tensei system](https://github.com/Alondaar/smt-200x)!
 
 ## License
 
-Token Action HUD Wrath & Glory is a module for Foundry VTT by coyotegrey and is licensed under an [MIT License](https://github.com/coyotegrey/token-action-hud-wng/blob/master/LICENSE).
+Token Action HUD Shin Megami Tensei is a module for Foundry VTT by coyotegrey and is licensed under an [MIT License](https://github.com/coyotegrey/token-action-hud-smt/blob/master/LICENSE).
 
 This work is licensed under Foundry Virtual Tabletop [EULA - Limited License for Package Development from March 2, 2023](https://foundryvtt.com/article/license/).

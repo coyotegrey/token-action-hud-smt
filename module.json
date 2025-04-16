@@ -37,8 +37,8 @@
         "type": "system",
         "compatibility": [
           {
-            "minimum": "0.878",
-            "verified": "0.878"
+            "minimum": "0.884",
+            "verified": "0.884"
           }
         ]
       }
