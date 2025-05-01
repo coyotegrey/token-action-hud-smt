@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.1.0
+- Added sort toggle for alpha vs. actor item order
+
 ## v0.0.0
 * Alpha release
 - Module currently offers: 
