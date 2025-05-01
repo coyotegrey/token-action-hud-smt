@@ -42,17 +42,18 @@ Hooks.once("tokenActionHudCoreApiReady", async (coreModule) => {
             this.actorType = this.actor?.type;
 
             // Settings
-            //this.displayUnequipped = Utils.getSetting("displayUnequipped");
+            this.sortAlpha = Utils.getSetting("sortAlpha");
+            let sortFunc = this.sortAlpha ? coreModule.api.Utils.sortItemsByName : Utils.sortItems;
             this.showTCheaders = game.settings.get("smt-200x", "showTCheaders");
 
             // Set items variable
             if (this.actor) {
                 let gear = this.actor.items.filter(i => this.#gearTypes.includes(i.type));
 
-                this.items = coreModule.api.Utils.sortItemsByName(this.actor.items);
+                this.items = sortFunc(this.actor.items);
                 this.stats = this.actor.system.stats;
-                this.features = coreModule.api.Utils.sortItemsByName(this.actor.items);
-                this.gear = coreModule.api.Utils.sortItemsByName(gear);
+                this.features = sortFunc(this.actor.items);
+                this.gear = sortFunc(gear);
             }
 
             if (["character","npc"].includes(this.actorType)) {

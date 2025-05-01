@@ -1,6 +1,12 @@
 {
   "tokenActionHud": {
     "smt": {
+      "settings": {
+        "sortAlpha": {
+          "name": "Sort Items Alphabetically",
+          "hint": "Sort the HUD items alphabetically (rather than in the order they appear on the actor sheet)."
+        }
+      },
       "stat": "Stat",
       "stats": "Stats",
       "derived": "Derived Stats",

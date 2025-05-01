@@ -36,5 +36,16 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
                 coreModule.api.Logger.debug(`Setting '${key}' not found`)
             }
         }
+
+        /**
+         * Sort items 
+         * NOTE: Changed from core. Use a subtract sort rather than locale sort since not a string.
+         * @public
+         * @param {object} items The items
+         * @returns {object}     The sorted items
+         */
+        static sortItems(items) {
+            return new Map([...items.entries()].sort((a, b) => a[1].sort - b[1].sort));
+        }
     }
 })

@@ -6,17 +6,15 @@ import { MODULE } from './constants.js'
  * @param {function} coreUpdate Token Action HUD Core update function
  */
 export function register (coreUpdate) {
-    /*
-    game.settings.register(MODULE.ID, 'displayUnequipped', {
-        name: game.i18n.localize('tokenActionHud.smt.settings.displayUnequipped.name'),
-        hint: game.i18n.localize('tokenActionHud.smt.settings.displayUnequipped.hint'),
+    game.settings.register(MODULE.ID, 'sortAlpha', {
+        name: game.i18n.localize('tokenActionHud.smt.settings.sortAlpha.name'),
+        hint: game.i18n.localize('tokenActionHud.smt.settings.sortAlpha.hint'),
         scope: 'client',
         config: true,
         type: Boolean,
-        default: true,
+        default: false,
         onChange: (value) => {
             coreUpdate(value)
         }
     })
-    */
 }
