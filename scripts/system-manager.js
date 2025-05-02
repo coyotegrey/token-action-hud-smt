@@ -71,5 +71,22 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
         registerSettings (coreUpdate) {
             systemSettings.register(coreUpdate)
         }
+
+        /**
+         * Returns styles to Token Action HUD Core
+         * Called by Token Action HUD Core
+         * @override
+         * @returns {object} The TAH system styles
+         */
+        registerStyles () {
+            return {
+                template: {
+                    class: 'smt-p3', // The class to add to first DIV element
+                    file: 'persona3', // The file without the css extension
+                    moduleId: MODULE.ID, // The module ID
+                    name: 'Persona 3' // The name to display in the Token Action HUD Core 'Style' module setting
+                }
+            }
+        }
     }
 })

@@ -21,6 +21,7 @@
   "scripts": [
   ],
   "styles": [
+    "./styles/persona3.css"
   ],
   "languages": [
     {

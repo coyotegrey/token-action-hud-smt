@@ -182,7 +182,11 @@ Hooks.once('tokenActionHudCoreApiReady', async (coreModule) => {
             switch (item?.type) {
                 case "consumable":
                     if (!this.isRightClick) {
-                        item.roll();
+                        if (item.system.power || item.system.powerDice) {
+                            item.rollPower(true);
+                        } else {
+                            item.roll();
+                        }
                     } else {
                         const quantity = Math.max(0, item.system.quantity - 1);
                         item.update({ "system.quantity": quantity });

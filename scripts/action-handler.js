@@ -204,13 +204,12 @@ Hooks.once("tokenActionHudCoreApiReady", async (coreModule) => {
             }
 
             for (const [type, typeMap] of inventoryMap) {
-                const actionTypeId = "gear";
+                const actionTypeId = type == "weapon" ? "weapon" : "gear";
                 const groupId = ITEM_TYPE[type]?.groupId;
 
                 if (!groupId) continue;
 
                 if (type == "weapon") {
-                    const actionTypeId = "weapon";
                     const actionTypeName = coreModule.api.Utils.i18n(ACTION_TYPE[actionTypeId]);
                     const parentGroupData = { id: groupId, type: "system" };
 
